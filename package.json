@@ -1,0 +1,35 @@
+{
+	"name": "ecommerce-backend",
+	"version": "1.0.0",
+	"description": "Backend for a ecommerce website",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "nodemon index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ayusshrathore/ecommerce-api.git"
+	},
+	"author": "Ayush Rathore",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ayusshrathore/ecommerce-api/issues"
+	},
+	"homepage": "https://github.com/ayusshrathore/ecommerce-api#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cors": "^2.8.5",
+		"crypto": "^1.0.1",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.3.4",
+		"multer": "^1.4.4",
+		"nodemailer": "^6.7.5",
+		"razorpay": "^2.8.1"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.16"
+	}
+}
