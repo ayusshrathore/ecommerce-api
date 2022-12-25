@@ -23,7 +23,7 @@ router.get("/", (req, res) => {
 router.post("/api/v1/admin/register", adminController.register);
 router.post("/api/v1/admin/login", adminController.login);
 router.post("/api/v1/admin/delete", checkAuth, adminController.delete);
-router.get("/api/v1/admin/get", checkAuth, adminController.get);
+router.get("/api/v1/admin", checkAuth, adminController.get);
 
 // User routes
 router.post("/api/v1/user/register", userController.register);
@@ -35,8 +35,8 @@ router.post(
 	userController.updateAddress
 );
 router.post("/api/v1/user/delete", checkAuth, userController.delete);
-router.post("/api/v1/user/get", checkAuth, userController.getUser);
-router.get("/api/v1/user/getAll", checkAuth, userController.get);
+router.get("/api/v1/user", checkAuth, userController.get);
+router.get("/api/v1/user/list", checkAuth, userController.getAll);
 
 // Product routes
 router.post(
@@ -52,7 +52,7 @@ router.post(
 	productController.update
 );
 router.post("/api/v1/product/delete", checkAuth, productController.delete);
-router.get("/api/v1/product/get", productController.get);
+router.get("/api/v1/product", productController.get);
 
 // Blog routes
 router.post(
@@ -68,11 +68,11 @@ router.post(
 	blogController.update
 );
 router.post("/api/v1/blog/delete", checkAuth, blogController.delete);
-router.get("/api/v1/blog/get", blogController.get);
+router.get("/api/v1/blog", blogController.get);
 
 // Customer routes
 router.post("/api/v1/customer/add", customerController.add);
-router.get("/api/v1/customer/get", customerController.get);
+router.get("/api/v1/customer", customerController.get);
 
 // Mail routes
 router.post("/api/v1/mail/send", mail.send);
@@ -81,13 +81,13 @@ router.post("/api/v1/mail/send", mail.send);
 router.post("/api/v1/cart/add", checkAuth, cartController.add);
 router.post("/api/v1/cart/update", checkAuth, cartController.update);
 router.post("/api/v1/cart/delete", checkAuth, cartController.delete);
-router.post("/api/v1/cart/get", checkAuth, cartController.get);
-router.get("/api/v1/cart/getAll", checkAuth, cartController.getAll);
+router.get("/api/v1/cart", checkAuth, cartController.get);
+router.get("/api/v1/cart/list", checkAuth, cartController.getAll);
 
 // Order routes
 router.post("/api/v1/order/create", checkAuth, orderController.create);
 router.post("/api/v1/order/cancel", checkAuth, orderController.cancel);
-router.post("/api/v1/order/get", checkAuth, orderController.get);
+router.get("/api/v1/order", checkAuth, orderController.get);
 
 // Payment routes
 router.post("/api/v1/payment/create", checkAuth, paymentController.create);
