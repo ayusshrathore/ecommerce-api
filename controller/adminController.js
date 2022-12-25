@@ -115,7 +115,7 @@ exports.get = (req, res) => {
 			});
 		}
 		res.status(200).json({
-			message: "Users fetched successfully",
+			message: "Admins fetched successfully",
 			data: users,
 		});
 	});

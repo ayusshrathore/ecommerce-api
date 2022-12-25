@@ -113,7 +113,8 @@ exports.update = (req, res) => {
 		user.lastName = lastName;
 		user.email = email;
 		user.phone = phone;
-		user.save()
+		user
+			.save()
 			.then((user) => {
 				res.status(200).json({
 					message: "User updated successfully",
@@ -142,7 +143,8 @@ exports.updateAddress = (req, res) => {
 			});
 		}
 		user.address = { house, street, city, state, pincode };
-		user.save()
+		user
+			.save()
 			.then((user) => {
 				res.status(200).json({
 					message: "User address updated successfully",
@@ -176,7 +178,7 @@ exports.delete = (req, res) => {
 	});
 };
 
-exports.getUser = (req, res) => {
+exports.get = (req, res) => {
 	if (!req.body.email) {
 		return res.status(400).json({
 			message: "User email is required",
@@ -195,7 +197,7 @@ exports.getUser = (req, res) => {
 	});
 };
 
-exports.get = (req, res) => {
+exports.getAll = (req, res) => {
 	User.find().then((users) => {
 		if (!users.length) {
 			return res.status(400).json({
