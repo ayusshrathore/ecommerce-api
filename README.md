@@ -1,4 +1,5 @@
 # eCommerce-API
+Introducing a full-fledged eCommerce API solution, built using Node.js, is a one-stop for all your eCommerce needs. With a user-friendly interface and seamless integration, this API is designed to help you effortlessly manage your online store. From product management to payment processing, this API provides an all-in-one solution that will take your eCommerce business to the next level.
 
 ## End-point: User login
 ### Method: POST
