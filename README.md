@@ -1,4 +1,4 @@
-# Project: eCommerce
+# eCommerce-API
 
 ## End-point: User login
 ### Method: POST
@@ -612,9 +612,3 @@
 |Content-Type|Value|
 |---|---|
 |access-token|eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhleWZyZWFrZXJAZ21haWwuY29tIiwiaWQiOiI2MmJmMTYwMjk0OWQ0ZDJmMjc1YmFkYmMiLCJjb2xsZWN0aW9uIjoidXNlcnMiLCJpYXQiOjE2NTY4NTgxNTUsImV4cCI6MTY1NzQ2Mjk1NX0.waeGCtbjl4W3tM5pHdIGygj9LnSEpeh0i0taN_6iYl4|
-
-
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-_________________________________________________
-Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
