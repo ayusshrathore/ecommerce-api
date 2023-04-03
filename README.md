@@ -896,6 +896,11 @@ npm start
 
 <hr>
 
+## Credits
+-  [@aaaravv](https://github.com/aaaravv) for contributing to the docs.
+
+<hr>
+
 ## Contributing
 
 Contributions are always welcome!
